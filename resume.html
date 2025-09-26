@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — 蔡 (學號 114001001)</title>
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --muted:#6b7280; --accent:#3b82f6;
+      --maxw:900px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef3fb);color:#111;font-size:16px;line-height:1.45}
+    .container{max-width:var(--maxw);margin:28px auto;padding:20px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 22px rgba(14,30,37,0.08);overflow:hidden;display:grid;grid-template-columns:280px 1fr}
+    .left{padding:28px;background:linear-gradient(180deg,#fbfdff, #f3f8ff)}
+    .right{padding:28px}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:30px;margin-bottom:16px}
+    h1{margin:0;font-size:20px}
+    .meta{color:var(--muted);font-size:14px;margin-top:6px}
+    .section{margin-bottom:18px}
+    .section h3{margin:0 0 8px 0;font-size:14px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:var(--accent);font-size:13px;margin:4px 6px 0 0}
+    ul{padding-left:16px;margin:6px 0}
+    .skill-list{display:flex;flex-wrap:wrap}
+    .skill{background:#f3f6ff;border-radius:8px;padding:6px 8px;margin:6px 8px 0 0;font-size:13px;color:#0f172a}
+    .muted{color:var(--muted)}
+    .contact-item{font-size:14px;margin-bottom:8px}
+    .controls{display:flex;gap:10px;align-items:center}
+    button{cursor:pointer;border:0;border-radius:8px;padding:8px 12px;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid #e6eefc;color:var(--accent)}
+    .print-note{font-size:13px;color:var(--muted);margin-top:8px}
+    @media (max-width:880px){.card{grid-template-columns:1fr}.left{display:flex;gap:20px;align-items:center;padding:18px}.right{padding:18px}}
+    /* small resume table styles */
+    .row{display:flex;justify-content:space-between;gap:12px}
+    .row .col{flex:1}
+    .title{font-weight:700}
+    footer{font-size:13px;color:var(--muted);text-align:center;padding:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div>
+        <strong>Resume</strong> · 王曉華
+      </div>
+      <div class="controls">
+        <button class="btn-primary" id="printBtn">列印 / 存為 PDF</button>
+        <button class="btn-ghost" id="toggleTheme">切換深色模式</button>
+      </div>
+    </div>
+
+    <div class="card" id="resumeCard">
+      <aside class="left">
+        <div style="display:flex;flex-direction:column;align-items:flex-start">
+          <div class="avatar">王
+          </div>
+          <h1>王曉華</h1>
+          <div class="meta">學號：114001001 · 亞洲大學 一年級</div>
+        </div>
+
+        <div class="section">
+          <h3>聯絡資訊</h3>
+          <div class="contact-item"><strong>Email:</strong> <span class="muted">your.email@example.com</span></div>
+          <div class="contact-item"><strong>電話:</strong> <span class="muted">(09) 1234-5678</span></div>
+          <div class="contact-item"><strong>地點:</strong> <span class="muted">台中市, 台灣</span></div>
+        </div>
+
+        <div class="section">
+          <h3>技能</h3>
+          <div class="skill-list">
+            <span class="skill">基礎文書處理</span>
+            <span class="skill">HTML / CSS / JavaScript (基礎)</span>
+            <span class="skill">西點/基礎烹飪</span>
+            <span class="skill">團隊合作</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>語言</h3>
+          <div class="badge">中文（母語）</div>
+          <div class="badge">英文（基礎）</div>
+        </div>
+
+        <div class="section">
+          <h3>興趣</h3>
+          <div class="muted">球類運動、烹飪、咖啡文化</div>
+        </div>
+
+      </aside>
+
+      <main class="right">
+        <section class="section">
+          <h3>個人簡介</h3>
+          <p class="muted">我是亞洲大學一年級學生（學號 114001001），目標成為廚師並在未來經營自己的咖啡館。具備基礎文書處理能力，對餐飲與烘焙有濃厚興趣，樂於團隊合作與實作學習。</p>
+        </section>
+
+        <section class="section">
+          <h3>學歷</h3>
+          <div>
+            <div class="row">
+              <div class="col">
+                <div class="title">亞洲大學</div>
+                <div class="muted">在學中 · 一年級</div>
+              </div>
+              <div class="col" style="text-align:right">
+                <div class="muted">入學年份：2024</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>實作 / 專案</h3>
+          <ul>
+            <li>校園烘焙社實習：參與基礎甜點製作與咖啡拉花練習（課外活動）</li>
+            <li>個人小型食譜整理：整理並記錄常用食譜，嘗試改良配方與分享給同學</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>工作經驗</h3>
+          <p class="muted">目前無正式工作經驗 — 有志於從基礎學徒或兼職廚房助理做起，累積實務能力。</p>
+        </section>
+
+        <section class="section">
+          <h3>職涯目標</h3>
+          <p class="muted">短期：在餐飲業累積廚房經驗。長期：成為專業廚師並開設自己的咖啡館/餐廳。</p>
+        </section>
+
+        <div style="display:flex;gap:12px;margin-top:12px;align-items:center">
+          <button class="btn-primary" id="downloadHtml">下載 HTML 檔</button>
+          <button class="btn-ghost" id="copyId">複製學號</button>
+        </div>
+
+      </main>
+    </div>
+
+    <footer>
+      這是一份自動產生的個人履歷範本。可按「列印 / 存為 PDF」輸出正式檔案。
+    </footer>
+  </div>
+
+  <script>
+    // Print
+    document.getElementById('printBtn').addEventListener('click',()=>window.print());
+
+    // Theme toggle (簡單深色模式)
+    const toggle = document.getElementById('toggleTheme');
+    toggle.addEventListener('click',()=>{
+      document.documentElement.style.setProperty('--bg', getComputedStyle(document.documentElement).getPropertyValue('--bg').includes('#0')? '#f6f8fb' : '#0b1220');
+      document.documentElement.style.setProperty('--card', getComputedStyle(document.documentElement).getPropertyValue('--card').includes('#f')? '#071129' : '#ffffff');
+      document.documentElement.style.setProperty('--muted', getComputedStyle(document.documentElement).getPropertyValue('--muted').includes('#6')? '#9aa4b2' : '#6b7280');
+      document.documentElement.style.setProperty('--accent', getComputedStyle(document.documentElement).getPropertyValue('--accent').includes('#3')? '#60a5fa' : '#3b82f6');
+      document.body.style.color = document.body.style.color === '#fff' ? '#111' : '#fff';
+    });
+
+    // Download HTML file
+    document.getElementById('downloadHtml').addEventListener('click',()=>{
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'resume_114001001.html';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    // Copy student id
+    document.getElementById('copyId').addEventListener('click',()=>{
+      navigator.clipboard && navigator.clipboard.writeText('114001001');
+      alert('學號 114001001 已複製到剪貼簿');
+    });
+  </script>
+</body>
+</html>
